@@ -1,61 +1,69 @@
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
-      html,
-      body {
-        height: 100%;
-        width: 100%;
-        font-family: Arial, sans-serif;
-        background-color: #1c1c1c;
-      }
-      .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        height: 100vh;
-      }
-      h4 {
-        margin-bottom: 1em;
-        font-size: 10vmin;
-        color: palegreen;
-        font-weight: 800;
-      }
-      button {
-        margin: 10px;
-        padding: 10px 20px;
-        width: 150px;
-        font-weight: 700;
-        font-style: oblique;
-        border-radius: 0.4em;
-        border: 2px solid pink;
-        background-color: transparent;
-        color: rgba(86, 136, 215, 0.869);
-        cursor: pointer;
-        transition: background-color 0.3s;
-      }
-      button:hover {
-        background-color: rgba(255, 192, 203, 0.1);
-      }
-      .result {
-        margin-top: 20px;
-        border: 2px solid palegreen;
-        padding: 20px 40px;
-        color: #f5a9d2;
-        font-weight: 900;
-        font-size: 2.5rem;
-        border-radius: 0.4em;
-      }
-      #inpFild {
-        margin: 10px 0;
-        height: 2.4em;
-        width: 30vw;
-        color: #8e8a8cde;
-        font-size: medium;
-        outline: 0;
-        border: 2.5px solid #8e8a8cde;
-        border-radius: 0.4em;
-        padding: 0 10px;
-      }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #1c1c1c;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+}
+h4 {
+  margin-bottom: 1em;
+  font-size: 10vmin;
+  color: palegreen;
+  font-weight: 800;
+}
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  width: 150px;
+  font-weight: 700;
+  font-style: oblique;
+  border-radius: 0.4em;
+  border: 2px solid pink;
+  background-color: transparent;
+  color: rgba(86, 136, 215, 0.869);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: rgba(255, 192, 203, 0.1);
+}
+.result {
+  margin-top: 20px;
+  border: 2px solid palegreen;
+  padding: 20px 40px;
+  color: #f5a9d2;
+  font-weight: 900;
+  font-size: 2.5rem;
+  border-radius: 0.4em;
+}
+#inpFild {
+  margin: 10px 0;
+  height: 2.4em;
+  width: 30vw;
+  color: #8e8a8cde;
+  font-size: medium;
+  outline: 0;
+  border: 2.5px solid #8e8a8cde;
+  border-radius: 0.4em;
+  padding: 10px 10px;
+}
+@media (max-width: 670px) {
+  #inpFild{
+    width: 70vw;
+  }
+  .container{
+    height: 68vh;
+  }
+}

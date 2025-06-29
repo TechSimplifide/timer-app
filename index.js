@@ -20,11 +20,13 @@ const inputValue = document.querySelector("#inpFild");
         } else {
           clearInterval(intervalId);
           intervalId = null;
-          alarm.innerHTML = `<p style="color: red; font-weight: bold;">Time's up!</p>`;
+          document.querySelector("#ringAlarm").play()
+          alarm.innerHTML = `<p style="color: red; margin-top:1.5px; font-weight: bold;">Time's up!</p>`;
         }
       };
 
       document.querySelector(".btn").addEventListener("click", () => {
+        document.querySelector("#inpFild").value = ''
         if (intervalId === null && time > 0) {
           alarm.innerHTML = ""; // Clear previous message
           intervalId = setInterval(timer, 1000);
