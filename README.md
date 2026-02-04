@@ -27,3 +27,8 @@ A clean and mobile-responsive web timer app that lets users set a countdown and 
 - **JavaScript (ES6+)**
 
 ---
+
+## Clone the repository:
+```text
+git clone https://github.com/techsimplifide/timer-app.git
+```
